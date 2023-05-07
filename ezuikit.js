@@ -34770,15 +34770,15 @@ var EZUIKitPlayer = /*#__PURE__*/function () {
         }
         if (this.Theme && (typeof options.url === 'string' || typeof options.accessToken === 'string')) {
           this.Theme.getDeviceInfo(function (data) {
-            if (data.data.isEncrypt) {
-              setTimeout(function () {
-                _this5.pluginStatus.loadingClear();
-                _this5.pluginStatus.loadingSetText({
-                  text: "设备已加密",
-                  color: 'red'
-                });
-              }, 1500);
-            }
+            // if (data.data.isEncrypt) {
+            //   setTimeout(function () {
+            //     _this5.pluginStatus.loadingClear();
+            //     _this5.pluginStatus.loadingSetText({
+            //       text: "设备已加密",
+            //       color: 'red'
+            //     });
+            //   }, 1500);
+            // }
           });
         }
       }
